@@ -5,7 +5,7 @@ CUPS 2.4.1 Chinese Language Patch \
 2.2.10到2.4.1的菜单差异并没有比较，只是把影响我使用的一些改了。所以有可能不全。 \
  \
 使用方法: \
-直接用本项目的文件替换以下两目录下的对应的文件。 \
+直接用本项目的文件替换以下两目录下的对应的文件，直接刷新页面即可生效。 \
 /usr/share/cups/doc-root/index.html \
 /usr/share/cups/templates/*.tmpl
 
