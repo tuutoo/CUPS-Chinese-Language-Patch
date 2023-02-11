@@ -1,0 +1,41 @@
+<FORM ACTION="/help/{?HELPFILE}" METHOD="GET">
+{TOPIC?<INPUT TYPE="HIDDEN" NAME="TOPIC" VALUE="{TOPIC}">:}
+
+<P ALIGN="CENTER"><B>搜索
+{HELPTITLE?{HELPTITLE}:{TOPIC?{TOPIC}:所有文档}}:</B> <INPUT
+TYPE="SEARCH" NAME="QUERY" VALUE="{?QUERY}" SIZE="40" PLACEHOLDER=""
+AUTOSAVE="org.cups.help" RESULTS="20">
+<INPUT TYPE="SUBMIT" NAME="SEARCH" VALUE="搜索">
+<INPUT TYPE="SUBMIT" NAME="CLEAR" VALUE="清除"></P>
+
+</FORM>
+
+<!-- Bookmarks -->
+<DIV CLASS="sidebar"><TABLE CLASS="inset" SUMMARY="Contents">
+<TR><TD>
+
+<H3 CLASS="title">在线帮助文档 (英文)</H3>
+
+<P CLASS="l0"><A HREF="/help/{QUERY??QUERY={QUERY}:}">所有文档</A></P>
+<HR>
+
+{[BMTEXT]<P CLASS="l{BMINDENT}"><A HREF="{BMLINK}">{BMTEXT}</A></P>
+}
+</TD></TR>
+</TABLE></DIV>
+
+{QUERY?<P>Search Results in {HELPFILE?{HELPTITLE}:{TOPIC?{TOPIC}:All Documents}}\:</P>
+{QTEXT?<UL>
+{[QTEXT]<LI><A HREF="{QLINK}">{QTEXT}</A>{QPTEXT? (in <I><A HREF="{QPLINK}">{QPTEXT}</A></I>):}</LI>}
+{QTEXT?</UL>:}
+:<P>No matches found.</P>}
+<HR NOSHADE>:}
+{HELPTITLE?<FORM ACTION="/help/{?HELPFILE}" METHOD="GET"><INPUT TYPE="HIDDEN" NAME="PRINTABLE" VALUE="YES"><INPUT TYPE="SUBMIT" VALUE="View Printable Version"></FORM>:
+
+<H1>在线帮助</H1>
+
+<P>这里是CUPS的在线帮助界面。在上面输入搜索词或点击任何一个文档链接来显示在线帮助信息。</P>
+
+<P>如果您是CUPS的新用户，请阅读 "<a href="/help/overview.html">CUPS的概览</a>" 页面。</P>
+
+<P><A HREF="https://openprinting.github.io/cups/">CUPS 主页</A> 还提供了许多资源，包括用户论坛、常见问题的解答以及提交错误报告和功能请求的表格。</P>}
