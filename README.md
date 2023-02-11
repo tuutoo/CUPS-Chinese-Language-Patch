@@ -6,8 +6,8 @@ Cups 2.4.1 Chinese Languate Patch \
  \
 使用方法: \
 直接用本项目的文件替换以下两目录下的对应的文件。 \
-doc-root/index.html \
-templates/*.tmpl
+/usr/share/cups/doc-root/index.html \
+/usr/share/cups/templates/*.tmpl
 
 
 
