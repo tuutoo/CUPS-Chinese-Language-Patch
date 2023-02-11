@@ -1,5 +1,5 @@
 CUPS的Web界面v2.4.1汉化包 \
-Cups 2.4.1 Chinese Languate Patch \
+CUPS 2.4.1 Chinese Language Patch \
  \
 从[TubroDog/CUPSChinesePatch](https://github.com/TubroDog/CUPSChinesePatch)复制过来，稍微改了一点。 \
 2.2.10到2.4.1的菜单差异并没有比较，只是把影响我使用的一些改了。所以有可能不全。 \
